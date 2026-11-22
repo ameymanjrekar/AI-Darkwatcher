@@ -4,46 +4,47 @@
 
 ---
 
+## 👨‍💻 Project Curator & Contact
+* **Created & Curated by**: **Amey Manjrekar**
+* **Collaborator Contact**: [LinkedIn - Amey Manjrekar](https://www.linkedin.com/in/ameymanjrekar) (Open to DMs for data partnerships & security collaboration)
+* **Commercial Use & Support**: [PayPal Tip & Support](https://paypal.me/ameymanjrekar)
+
+---
+
 ## 🚀 Key Features
 
-- **📈 Live Public Trust Wave**: Real-time moving telemetry graph tracking global sentiment and AI reliability.
-- **🚩 Red-Flag Anomaly Spikes**: Instant visual alerts and spike animations whenever a major exploit or safety violation occurs.
-- **🤖 Autonomous AI Agent Monitor**: Tracks what unmonitored AI bots and coding agents are doing in the wild (sandbox breakouts, runaway loops).
-- **🏢 Culprit Scoreboard**: Transparent rankings of which AI models and architectures are causing the highest number of safety incidents.
-- **🛡️ Solutions & Defenses**: Plain-English explanations of emerging fixes (C2PA digital fingerprints, microVM jails, dual-guard checkpoints).
-- **💬 1-Click WhatsApp Sharing**: Instant mobile dispatch button to send concise safety alerts to team members or family.
-- **⚙️ Automated GitHub Ingestion Workflow**: Scheduled GitHub Actions pipeline (`.github/workflows/update_incidents.yml`) syncing fresh threat data automatically.
+1. **⏱️ Exact Incident Timestamps**: Full UTC date and time logging for every reported AI breach or malfunction.
+2. **🎯 Real-Time Threat Gauge Meter**: Speedometer-style risk gauge showing current global danger level (0–100 with Green/Yellow/Red severity zones).
+3. **📈 Continuous Public Trust Wave**: Dynamic real-time telemetry graph tracking public sentiment and reliability fluctuations.
+4. **🚩 Red-Flag Anomaly Spikes**: Instant visual alerts and spike animations whenever a major exploit or safety violation occurs.
+5. **❤️ Community Likes & Ratings**: Interactive like button with live counters, plus a 1-to-10 severity rating system (1 = OK, 10 = Worst Situation).
+6. **🤖 Autonomous AI Agent Monitor**: Tracks what unmonitored AI bots and coding agents are doing in the wild (sandbox breakouts, runaway loops).
+7. **🏢 Culprit Scoreboard**: Transparent rankings of which AI models and architectures are causing the highest number of safety incidents.
+8. **🛡️ Solutions & Defenses**: Plain-English explanations of emerging fixes (C2PA digital fingerprints, microVM jails, dual-guard checkpoints).
+9. **💬 1-Click WhatsApp Sharing**: Instant mobile dispatch button to send concise safety alerts to team members or family.
+10. **⚙️ Automated GitHub Ingestion Workflow**: Scheduled GitHub Actions pipeline (`.github/workflows/update_incidents.yml`) syncing fresh threat data automatically.
 
 ---
 
-## 🛠️ Quick Setup: Publishing to GitHub & GitHub Pages
+## 🛠️ Quick Deployment
 
-To link this project to your GitHub account and host it free forever on GitHub Pages:
+### Deploy to GitHub Pages (Static Web)
+1. Initialize git and commit:
+   ```bash
+   git init
+   git add .
+   git commit -m "feat: AI DarkWatch release with threat gauge and community ratings"
+   ```
+2. Push to your GitHub repository:
+   ```bash
+   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/ai-darkwatch.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. In GitHub Settings > Pages, select branch `main` and folder `/(root)`.
+4. Your site will be live at: `https://<YOUR_GITHUB_USERNAME>.github.io/ai-darkwatch/`
 
-### 1. Initialize Git in this directory
-```bash
-cd C:\Users\ameym\.gemini\antigravity\scratch\ai-darkwatch
-git init
-git add .
-git commit -m "feat: initial release of AI DarkWatch observatory"
-```
-
-### 2. Connect to your GitHub repository
-Create a new public repository named `ai-darkwatch` on GitHub, then link it:
-```bash
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/ai-darkwatch.git
-git branch -M main
-git push -u origin main
-```
-
-### 3. Enable GitHub Pages
-1. Go to your repository **Settings** > **Pages**.
-2. Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then click **Save**.
-4. Your site will be live instantly at:
-   `https://<YOUR_GITHUB_USERNAME>.github.io/ai-darkwatch/`
-
----
-
-## 🤖 Automated Cron Updates
-The workflow at `.github/workflows/update_incidents.yml` runs every 6 hours (and on manual trigger) to refresh `data/incidents.json` and keep your live site continuously updated!
+### Deploy Python App
+1. Go to [share.streamlit.io](https://share.streamlit.io) and link your GitHub repository.
+2. Select repository `ai-darkwatch` and main file `app.py`.
+3. Click **Deploy!**
